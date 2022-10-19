@@ -19,7 +19,6 @@ public class basePage {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         wdwait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        driver.manage().window().maximize();
         driver.get("url");
     }
 
